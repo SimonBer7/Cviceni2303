@@ -35,6 +35,9 @@ $(document).ready(function () {
             $(".id").text(data.id);
             $(".type").text(data.type);
             
+        },
+        error: function () { // error callback 
+            alert('Error with connection to website');
         }
     });
 
@@ -87,8 +90,10 @@ function nactiJoke() {
             $(".answer").text(data.delivery);
             $(".id").text(data.id);
             $(".type").text(data.type);
+        },
+        error: function () { // error callback 
+            alert('Error with connection to website');
         }
-        
     });
 }
 

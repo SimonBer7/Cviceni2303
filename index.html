@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vtípky s týpky</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom bg-secondary">
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none mx-auto">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-1 text-light">Vtípky s týpky</span>
+        </a>
+    </header>
+
+    <button id="previous" class="btn bg-info">Previous</button>
+    <button id="next" class="btn bg-info">Next</button>
+
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="row">
+            <div class="col-sm-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="smich.png" alt="img" height="200" width="350">
+                        <hr>
+                        <h3 class="card-title"></h3>
+                        <hr>
+                        <br>
+                        <p class="card-text"></p>
+                        <br><br>
+                        <p class="answer"></p>
+                        <button class="btn bg-info" id="details">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table id="my-table" style="display: none;">
+            <tr>
+                <th>Category</th>
+                <th>Question</th>
+                <th>Answer</th>
+                <th>ID</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td class="card-title"></td>
+                <td class="card-text"></td>
+                <td class="answer"></td>
+                <td class="id"></td>
+                <td class="type"></td>
+                <td></td>
+            </tr>
+        </table>
+        <button class="btn bg-danger" id="hide" style="display: none;">Hide</button>
+    </div>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+        </footer>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
